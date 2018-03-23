@@ -120,3 +120,21 @@ file.close()
 test=open('unidata.txt', 'r', encoding='utf-8').read()
 print(test)
 
+
+
+def factorial(n):
+    return 1 if n<2 else n*factorial(n-1)
+
+fact=factorial
+#Utiliser la fonction
+print(fact(5))
+#Connaitre le type de la variable
+type(fact)
+
+string=['crayon', 'pomme', 'tube', 'pamplemousse']
+#Trier les chaines selon leurs longueurs
+print(sorted(string, key=len))
+
+#Récupérer une liste de valeurs de la fonction fact()
+print(list(map(fact,range(10))))
+
